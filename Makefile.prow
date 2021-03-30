@@ -3,3 +3,7 @@ include /opt/build-harness/Makefile.prow
 .PHONY: build
 build:
 	CGO_ENABLED=0 go build -trimpath -o main cmd/hello/main.go
+
+.PHONY: test-e2e
+test-e2e:
+	KUBECONFIG="${SHARED_DIR}/hub-1.kc" oc -n open-cluster-management get pods
