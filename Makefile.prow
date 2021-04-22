@@ -1,4 +1,4 @@
-include /opt/build-harness/Makefile.prow
+-include /opt/build-harness/Makefile.prow
 
 .PHONY: build
 build:
@@ -7,3 +7,7 @@ build:
 .PHONY: test-e2e
 test-e2e:
 	KUBECONFIG="${SHARED_DIR}/hub-1.kc" oc -n open-cluster-management get pods
+
+.PHONY: test-kind
+test-kind:
+	build/test-kind-prow.sh
