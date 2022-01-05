@@ -1,3 +1,3 @@
-module github.com/open-cluster-management/helloprow-go
+module github.com/stolostron/helloprow-go
 
-go 1.15
+go 1.17
