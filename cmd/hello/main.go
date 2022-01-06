@@ -4,7 +4,7 @@ import (
 	"log"
 	"net"
 
-	"github.com/open-cluster-management/helloprow-go/pkg/hello"
+	"github.com/stolostron/helloprow-go/pkg/hello"
 )
 
 const address = ":4321"
