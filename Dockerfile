@@ -4,7 +4,6 @@ WORKDIR /go/src/github.com/stolostron/helloprow-go
 COPY . .
 RUN CGO_ENABLED=0 go build -trimpath -o main cmd/hello/main.go
 
-
 FROM scratch
 
 WORKDIR /opt/app/
